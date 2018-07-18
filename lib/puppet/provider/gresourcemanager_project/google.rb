@@ -30,9 +30,9 @@ require 'google/resourcemanager/network/delete'
 require 'google/resourcemanager/network/get'
 require 'google/resourcemanager/network/post'
 require 'google/resourcemanager/network/put'
-require 'google/resourcemanager/property/enum'
 require 'google/resourcemanager/property/integer'
 require 'google/resourcemanager/property/namevalues'
+require 'google/resourcemanager/property/project_lifecycle_state'
 require 'google/resourcemanager/property/project_parent'
 require 'google/resourcemanager/property/string'
 require 'google/resourcemanager/property/time'
@@ -68,7 +68,8 @@ Puppet::Type.type(:gresourcemanager_project).provide(:google) do
   def self.fetch_to_hash(fetch)
     {
       number: Google::Resourcemanager::Property::Integer.api_munge(fetch['projectNumber']),
-      lifecycle_state: Google::Resourcemanager::Property::Enum.api_munge(fetch['lifecycleState']),
+      lifecycle_state:
+        Google::Resourcemanager::Property::LifecycleStateEnum.api_munge(fetch['lifecycleState']),
       name: Google::Resourcemanager::Property::String.api_munge(fetch['name']),
       create_time: Google::Resourcemanager::Property::Time.api_munge(fetch['createTime']),
       labels: Google::Resourcemanager::Property::NameValues.api_munge(fetch['labels']),

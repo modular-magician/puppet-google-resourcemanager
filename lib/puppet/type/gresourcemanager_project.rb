@@ -25,9 +25,9 @@
 #
 # ----------------------------------------------------------------------------
 
-require 'google/resourcemanager/property/enum'
 require 'google/resourcemanager/property/integer'
 require 'google/resourcemanager/property/namevalues'
+require 'google/resourcemanager/property/project_lifecycle_state'
 require 'google/resourcemanager/property/project_parent'
 require 'google/resourcemanager/property/string'
 require 'google/resourcemanager/property/time'
@@ -74,7 +74,7 @@ Puppet::Type.newtype(:gresourcemanager_project) do
     desc 'Number uniquely identifying the project. (output only)'
   end
 
-  newproperty(:lifecycle_state, parent: Google::Resourcemanager::Property::Enum) do
+  newproperty(:lifecycle_state, parent: Google::Resourcemanager::Property::LifecycleStateEnum) do
     desc 'The Project lifecycle state. (output only)'
     newvalue(:LIFECYCLE_STATE_UNSPECIFIED)
     newvalue(:ACTIVE)
