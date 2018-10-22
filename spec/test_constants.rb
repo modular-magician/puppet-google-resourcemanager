@@ -27,13 +27,5 @@
 
 module GoogleTests
   module Constants
-    # Constants for: Project.id
-    P_ID_DATA = [
-      'test id#0 data',
-      'test id#1 data',
-      'test id#2 data',
-      'test id#3 data',
-      'test id#4 data'
-    ].freeze
   end
 end

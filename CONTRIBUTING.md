@@ -92,38 +92,11 @@ puppet-codegen:
   * examples/delete_project.pp
   * examples/project.pp
   * Gemfile
-  * lib/google/resourcemanager/network/base.rb
-  * lib/google/resourcemanager/network/delete.rb
-  * lib/google/resourcemanager/network/get.rb
-  * lib/google/resourcemanager/network/post.rb
-  * lib/google/resourcemanager/network/put.rb
-  * lib/google/resourcemanager/property/base.rb
-  * lib/google/resourcemanager/property/enum.rb
-  * lib/google/resourcemanager/property/integer.rb
-  * lib/google/resourcemanager/property/namevalues.rb
-  * lib/google/resourcemanager/property/project_parent.rb
-  * lib/google/resourcemanager/property/string.rb
-  * lib/google/resourcemanager/property/time.rb
-  * lib/puppet/provider/gresourcemanager_project/google.rb
-  * lib/puppet/type/gresourcemanager_project.rb
   * metadata.json
   * README.md
   * spec/.rubocop.yml
   * spec/bundle.rb
-  * spec/data/network/gresourcemanager_project/success1~name.yaml
-  * spec/data/network/gresourcemanager_project/success1~title.yaml
-  * spec/data/network/gresourcemanager_project/success2~name.yaml
-  * spec/data/network/gresourcemanager_project/success2~title.yaml
-  * spec/data/network/gresourcemanager_project/success3~name.yaml
-  * spec/data/network/gresourcemanager_project/success3~title.yaml
   * spec/fake_auth.rb
-  * spec/gresourcemanager_project_provider_spec.rb
-  * spec/network_blocker.rb
-  * spec/network_blocker_spec.rb
-  * spec/network_delete_spec.rb
-  * spec/network_get_spec.rb
-  * spec/network_post_spec.rb
-  * spec/network_put_spec.rb
   * spec/puppetlint_spec.rb
   * spec/spec_helper.rb
   * spec/test_constants.rb
